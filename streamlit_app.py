@@ -215,8 +215,8 @@ def main():
             time.sleep(1)
             try:
                 response = requests.post(
-                    # 'https://ahk-medals2.onrender.com/model_prediction', data=inputs, headers={'Content-Type': 'application/json'}) 
-                    'http://127.0.0.1:8000/model_prediction', data=inputs, headers={'Content-Type': 'application/json'}) 
+                    'https://ahk-medal-price-prediction.onrender.com/model_prediction', data=inputs, headers={'Content-Type': 'application/json'}) 
+                    # 'http://127.0.0.1:8000/model_prediction', data=inputs, headers={'Content-Type': 'application/json'}) 
                 response_data = response.json()
 
                 if 'result' in response_data:
